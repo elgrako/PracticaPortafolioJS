@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto css.css">
+    <script src="formulario.js"></script>
+    <script src="boton.js"></script>
+    <script src="botonanimacion.js"></script>
+    <title>Contacto</title>
+    </head>
+  <header>
+    <h1>Mi Portafolio</h1>
+		<nav>
+			<ul>
+				<li><a class="link1" href="inicio.html">Inicio</a></li>
+				<li><a class="link1" href="proyecto.html">Proyectos</a></li>
+				<li><a class="link1" href="contacto.html">Contacto</a></li>
+				<li><a class="link1" href="cv.html">Sobre mi</a></li>
+			</ul>
+		</nav>
+  </header>
+<main>
+  <section class="inicio">
+    <h2>Contacto:</h2>
+  </div>
+    <p> Aqui podras contactar conmigo para cualquier trabajo o servicio que se necesite.</p>
+  </section>
+  <hr id="bar">
+    
+      <fieldset id="fieldset">                                                        <!--creamos un campo para que introduzcan sus datos-->
+
+          <legend id="legend">Datos personales</legend>
+
+            <p><label>Tu Correo: <input type="text" name="correo" placeholder="ej. AAA@gmail.com"required/></label></p> 
+            
+
+            <p><label>Tu Localidad: <input type="text" name="localidad" placeholder="Madrid"></label></p>
+
+            <p><label>Tu nombre: <input type="text" name="nombre" placeholder="puedes añadir apellidos" required/></label></p>
+
+            <p><label>Tu telefono: <input type="text" name="tel" maxlength="9" minlength="9" placeholder="ej. 445678131" required/></label></p>
+
+
+      </fieldset>
+
+              
+        <fieldset id="fieldset">                                    <!--Campo de botones-->
+
+            <legend id="legend">Motivo del contacto</legend>
+
+              <label><input type="radio" name="a" value=2> Información</label>
+
+              <label><input type="radio" name="a" value=1> Otro Motivo </label>
+      
+               <p></p>
+
+          Informar Sobre:      
+              <select name="so" required>                          <!--Pequeña lista de opciones-->
+                  <option selected>--selecciona--</option>
+
+                  <option>Error de red</option>
+    
+                  <option>Comunicar algo</option>
+    
+                 <option>Sugerencias</option>
+
+              </select>
+
+              <p></p>
+          Subir archivo:
+              <input type="file" name="archivo" accept=".pdf">              <!-- Campo de selección de archivo -->
+              <input type="file" name="video" accept=".mp4">                       
+  
+              <p></p>
+          <textarea name="observaciones" placeholder="Observaciones" cols="70" rows="8"></textarea>
+
+        </fieldset>
+
+
+            <p></p>
+
+        <div><input class="boton" type="submit" value="Enviar" onclick="return validateForm()"></div>
+        <div><input class="boton" type="reset" value="Reiniciar"></div>
+
+      </form>
+
+      <hr id="bar">
+
+		  <button id="boton" onclick="scrollToTop()">↑</button>
+  </main>
+
+      <footer>
+          <p>Derechos reservados © 2023 Mi Portafolio</p>
+                                         <!--he añadido esto para que se pueda traducir-->
+
+  <script class="links-container" type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <div id="google_translate_element" class="google"></div>
+      <script type="text/javascript">                 <!--he añadido esto para que se pueda traducir//-->
+          function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+              }
+      </script>
+
+      </footer>
+  
+</html>

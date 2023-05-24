@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mi Portafolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proyectocss.css">
+    <script src="boton.js"></script>
+    <script src="botonanimacion.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Mi Portafolio</h1>
+      <nav>
+        <ul>
+          <li><a class="link1" href="inicio.html">Inicio</a></li>
+          <li><a class="link1" href="proyecto.html">Proyectos</a></li>
+          <li><a class="link1" href="contacto.html">Contacto</a></li>
+          <li><a class="link1" href="cv.html">Sobre mi</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    
+      <section class="inicio">
+        <h2 class="titulo">Proyectos:</h2>
+      
+        <p> Aqui mostrare los proyectos mas interesantes que he ido realizando a lo largo de mi carrera.</p>
+      </section>
+
+      <hr id="bar"> 
+
+      <section class="proyectos">
+        <h2>Proyectos Realizados:</h2>
+        <div></div>
+        <ul>
+          <li>
+            <a href="https://howtomechatronics.com/projects/arduino-radar-project/">
+                <h3>Radar</h3>
+                <img src="img/proy1.png" alt="Proyecto 1" class="img">
+            </a>
+          </li>
+
+          <li>
+            <a href="https://makezine.com/projects/s-m-a-r-t-alarm-clock/">
+                <h3>Alarma Inteligente</h3>
+                <img src="img/proy2.png" alt="Proyecto 2" class="img">
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.hackster.io/igorF2/diy-wi-fi-smart-scale-with-esp8266-adafruit-io-and-ifttt-fc68d1?utm_=Americas--null-Twitter-2018-06-06T18:58:35%2B00:00">
+              <img src="img/proy3.png" alt="Proyecto 3" class="img">
+              <h3>Bascula Inteligente</h3>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      
+      <section class="proyectos">
+        <h2>Proyectos Pendientes:</h2>
+        <div>Estos son los proyectos que estoy desarrollando </div>
+
+        <ul>
+            <li>
+              <a href="https://www.xataka.com/makers/46-proyectos-makers-para-hacer-verano-arduino-raspberry-pi">
+                  <h3>Escaneo de huellas dactilar</h3>
+                  <img src="img/proy4.png" alt="Proyecto Pendiente 4" class="img">
+              </a>
+            </li>
+  
+            <li>
+              <a href="https://makezine.com/article/technology/arduino/networked-on-air-light-for-streaming-broadcasters/">
+                  <h3>Señal de directo</h3>
+                  <img src="img/proy5.png" alt="Proyecto Pendiente 5" class="img">
+              </a>
+            </li>
+  
+            <li>
+              <a href="https://www.instructables.com/Voice-Activated-Arduino-Blinds/">
+                <img src="img/proy6.png" alt="Proyecto Pendiente 6" class="img">
+                <h3>Persianas por voz</h3>
+              </a>
+            </li>
+          </ul>
+      </section>
+
+      <section id="testimonios">
+        <h2>Testimonios:</h2>
+        <div class="testimonio">
+          <img src="img/testim1.png" alt="Avatar 1">
+          <blockquote> Trabajar con el fue una experiencia excelente. Su profesionalismo y dedicación hicieron que nuestro proyecto fuera un éxito </p>
+            <cite>John Doe, CEO TEINNOVA Company </cite>
+          </blockquote>
+        </div>
+        <div class="testimonio">
+          <img src="img/testim2.png" alt="Avatar 2">
+          <blockquote>
+            <p>Su habilidad para comunicarse de manera efectiva y resolver problemas nos impresionó. ¡Definitivamente lo recomendamos!.</p>
+            <cite>Jane Doe, Designer of Fuga Expres</cite>
+          </blockquote>
+        </div>
+        <div class="testimonio">
+          <img src="img/testim3.png" alt="Avatar 3">
+          <blockquote>
+            <p> La creatividad que tiene es impresionante. Estamos muy agradecidos de haber tenido la oportunidad de trabajar con él</p>
+            <cite>Mike Smith, Developer of Arduino S.R.L</cite>
+          </blockquote>
+        </div>
+      </section>
+      
+
+      <section id="valoraciones">
+        <div>
+          <h2>Deja tu valoración</h2>
+          <form>
+            <label for="nombre">Nombre:<input type="text" id="nombre" name="nombre" required></label>
+            <label for="valoracion">Valoración (1-5):<input type="number" id="valoracion" name="valoracion" min="1" max="5" required></label>
+            <label for="comentario">Comentario:<textarea id="comentario" name="comentario" required></textarea></label>
+            <button type="submit" class="valoraciones-boton" onclick="launchConfetti()">Enviar</button>
+          </form>
+        </div>
+
+
+        <div class="valoraciones-actuales">
+          <h3>Valoraciones actuales</h3>
+            <li>
+              <div class="valoracion">
+                  <span >Antonio Ruiz</span>
+                  <span>★★★★★</span>
+                  <p>Excelente trabajo, muy profesional</p>
+              </div>
+            </li>
+            <li>
+              <div class="valoracion">
+                  <span>Jose Luis</span>
+                  <span>★★★</span>
+                  <p>Aceptable servicio pero con retrasos en la entrega</p>
+              </div>
+            </li>
+            <li>
+              <div class="valoracion">
+                  <span>Ana Maria</span>
+                  <span>★★★★</span>
+                  <p>Buen resultado aunque esperaba algo mas visual</p>
+              </div>
+            </li>
+        </div>
+      </section>
+
+    <hr id="bar">
+
+		<button id="boton" onclick="scrollToTop()">↑</button>
+  </body>
+    
+    <footer>
+			<p>Derechos reservados © 2023 Mi Portafolio</p>
+										   <!--he añadido esto para que se pueda traducir-->
+  
+	<script class="links-container" type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<div id="google_translate_element" class="google"></div>
+		<script type="text/javascript">                 <!--he añadido esto para que se pueda traducir//-->
+			function googleTranslateElementInit() {
+				new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+				}
+		</script>
+		</footer>
+</html>

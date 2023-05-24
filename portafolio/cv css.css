@@ -1,0 +1,186 @@
+html{
+    background-color: rgb(131, 99, 182);
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	margin: 1;
+}
+
+
+header {
+	width: 100%;
+    height: auto;
+    background: linear-gradient(to right, rgb(80, 60, 160) 30%, rgb(104, 77, 212) 70%,rgb(159, 190, 100)85%, rgb(204, 243, 129) 100%);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	display: flex;
+	z-index: 1;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+
+.link1{
+	color: rgb(204, 243, 129);
+	text-decoration: none;
+	font-size: 20px;
+}
+
+
+h1 {
+	font-size: 30px;
+	margin: 0;
+	color: rgb(204, 243, 129);
+}
+
+
+nav li {
+	display: inline-block;
+	padding-right: 90px;
+}
+
+
+/* Estilos de contenido principal */
+.cv{
+	display:block;
+	margin-bottom: 40px;
+	margin-top: 80px;
+	padding: 15px;
+	font-size: 20px;
+	font-family:courier;
+  color:rgb(204, 243, 129) ;
+}
+
+
+.titulo {
+	font-size: 26px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-left: 20px;
+	font-family:verdana;
+  text-align: justify;
+  color :rgb(169, 207, 97);
+}
+
+.general{
+    color:rgb(169, 207, 97);
+    text-align: center;
+}
+
+/* Estilos tablas*/
+
+.divtablas{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+}
+
+.tabla1 {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-width: 1px;
+    color: rgb(204, 243, 129);
+    margin-bottom: 30px;
+    }
+  
+    .tabla1 td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.tabla2 {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-width: 1px;
+    margin-bottom: 30px;
+    }
+    
+    
+    .tabla2 td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+    color: rgb(204, 243, 129);
+    }
+    
+  .tabla2  tr:nth-child(even) {
+    background-color: rgb(80, 60, 160);
+    }
+    
+   .tabla2 tr:nth-child(odd) {
+    background-color:  rgb(104, 77, 212);
+}
+    
+
+.divtablas2{
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+}
+
+.tabla3 {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    }
+   
+    .tabla3 th,.tabla3 td {
+    padding: 8px;
+    text-align: left;
+    border: 1px;
+    }
+
+    .tabla3 th {
+    background-color: rgb(80, 60, 160);
+    color:rgb(204, 243, 129) ;
+    border-radius: 10px 10px 10px 0px;
+    }
+
+    .tabla3 td {
+    color: rgba(203, 243, 129, 0.719);
+    border: 1px solid rgb(80, 60, 160);
+    }
+
+    /*JS*/
+
+#boton {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 65px;
+	height: 60px;
+	background-color: rgba(73, 38, 112, 0.822);
+	border-radius: 25%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(175, 214, 101);
+	font-size: 20px;
+	cursor: pointer;
+  }
+  
+  #boton:hover {
+	opacity: 1;
+  }
+
+
+/* Estilos de pie de página */
+
+footer {
+    background-color: rgba(73, 38, 112, 0.822);
+    color: rgb(175, 214, 101);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+      
+}

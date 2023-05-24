@@ -1,0 +1,252 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	margin: 1;
+	background-color: rgb(232, 214, 248);
+}
+
+
+/* Estilos de cabecera */
+header {
+	width: 100%;
+    height: auto;
+    background: linear-gradient(to right, rgb(80, 60, 160) 30%, rgb(104, 77, 212) 70%,rgb(159, 190, 100)85%, rgb(204, 243, 129) 100%);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	display: flex;
+	z-index: 1;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+
+.link1{
+	color: rgb(204, 243, 129);
+	text-decoration: none;
+	font-size: 20px;
+}
+
+
+h1 {
+	font-size: 30px;
+	margin: 0;
+	color: rgb(204, 243, 129);
+}
+
+
+nav li {
+	display: inline-block;
+	padding-right: 90px;
+}
+
+
+/* Estilos de contenido principal */
+
+.sobremi{
+	display: inline-block;
+	margin-bottom: 40px;
+	margin-top: 80px;
+	padding: 15px;
+	font-size: 20px;
+	font-family:courier;
+}
+
+
+h2 {
+	font-size: 26px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-left: 20px;
+	font-family:verdana;
+}
+
+
+.FAQ{
+	font-size: 16px;
+	margin-top: 25px;
+	padding: 15px;
+	font-family:verdana;
+}
+
+
+.FAQ2{
+	font-size: 16px;
+	margin-right: 55px;
+	font-family:sans-serif;
+	padding-left: 70%;
+}
+
+
+#bar{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 100%;
+	height: auto;
+	color: black;
+	size: 5px;
+}
+
+
+.img2 {
+	position: relative;
+	display: block;
+	z-index: 0;
+	max-width: 25%;
+	height: auto;
+	margin-bottom: 10px;
+	float: right;
+	bottom: 60px;
+	right: 80px;
+}
+
+
+.img3{
+	display: block;
+	position: relative;
+	margin: auto;
+	padding: 15px;
+	width: 75%;
+	height: auto;
+	justify-content: center;
+}
+
+
+.marcas{
+	margin: 45px;
+	font-family: Suisse Works,Helvetica,Arial,sans-serif;
+    font-size: 28px;
+}
+
+
+.list{
+	vertical-align: inherit;
+	row-gap: 1rem;
+	font-size: 1.25rem;
+	grid-template-columns: repeat(2,minmax(0,1fr));
+	display: grid;
+	grid-auto-flow: row;
+	margin: 20px;
+}
+
+
+.icono{
+	display: flex;
+
+	z-index: 0;
+	margin: 2px;
+	padding: 2px;
+    width: 35px;
+    height: auto;
+}
+
+
+.links-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.link2{
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(175, 214, 101);
+    padding: 0 75px;
+}
+
+.charlemos{
+	text-align: center;
+	font-family: 'Suisse Works',Helvetica,Arial,sans-serif;
+	font-size: 18px;
+}
+
+#contacto{
+	padding: 15px;
+	margin-left: 5px;	
+	display: grid;
+	grid-template-columns: repeat(2,minmax(0,1fr));
+	
+}
+
+/* Lista Con distintos iconos */
+
+.listlinkdln{
+	margin-top: 15px;
+	margin-left: 50px;
+	color: black;
+	font-size: larger;
+	list-style: none;
+	list-style-image: url('img/linkdln.png');
+}
+
+.listgmail{
+	margin-top: 15px;
+	margin-left: 50px;
+	color: black;
+	font-size: larger;
+	list-style: none;
+	list-style-image: url('img/gmail.png');
+}
+
+.listNumero{
+	margin-top: 15px;
+	margin-left: 50px;
+	color: black;
+	font-size: larger;
+	list-style: none;
+	list-style-image: url('img/telefono.png');
+}
+
+.listMicv{
+	margin-top: 15px;
+	margin-left: 50px;
+	color: black;
+	font-size: larger;
+	list-style: none;
+	list-style-image: url('img/cvicono.png');
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+/*JS*/
+
+#boton {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 65px;
+	height: 60px;
+	background-color: rgba(73, 38, 112, 0.822);
+	border-radius: 25%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(175, 214, 101);
+	font-size: 20px;
+	cursor: pointer;
+  }
+  
+#boton:hover {
+	opacity: 1;
+}
+
+
+
+/* Estilos de pie de página */
+
+footer {
+    background-color: rgba(73, 38, 112, 0.822);
+    color: rgb(175, 214, 101);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
